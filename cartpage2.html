@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.">
+	<title>Product Details-Tomal & Farhan Store</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+	<link rel="stylesheet" href="style.css">
+	<style type="text/css">
+		@import url('https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css');
+	
+
+
+h1{
+		width: 3%;
+	    position: relative;
+	    top: 50px;
+	    left: 70%;
+	    cursor: pointer;
+	}
+	h1:before{
+		content: attr(data-count);
+	    color: white;
+	    position: absolute;
+	    right: 16px;
+	    font-size: 15px;
+	    text-align: center;
+	    top: -12px;
+	    width: 40px;
+	    height: 40px;
+	    background: red;
+	    border-radius: 50%;
+	    opacity: 0;
+	}
+	h1.zero:before{
+		opacity: 1;
+	}
+
+		h6{
+		    width: 50px;
+		    padding: 5px;
+		    margin: 10px;
+		    font-size: 15px;
+		}
+		button{
+			padding: 10px;
+		    background: red;
+		    border: none;
+		    outline: none;
+		    font-weight: bold;
+		    color: #fafafa;
+		    cursor: pointer;
+		}
+		section div span{
+			position: absolute;
+		    top: 14px;
+		    left: 13px;
+		    background: red;
+		    width: 200px;
+		    height: 156px;
+		    display: none;
+		}
+		
+		section div:nth-child(1)>span.active{
+			animation: first 0.5s ease-in;
+			z-index: 2;
+			display: block;
+
+		}
+		section div:nth-child(2)>span.active{
+			animation: second 0.5s ease-in;
+			z-index: 2;
+			display: block;
+
+		}
+		section div:nth-child(3)>span.active{
+			animation: third 0.5s ease-in;
+			z-index: 2;
+			display: block;
+
+		}
+		section div:nth-child(4)>span.active{
+			animation: four 0.5s ease-in;
+			z-index: 2;
+			display: block;
+
+		}
+		@keyframes first{
+			to{
+				width: 30px;
+			    height: 20px;
+			    left: 1290px;
+			    top: -70px;
+			}
+		}
+		@keyframes second{
+			to{
+				width: 30px;
+			    height: 20px;
+			    left: 948px;
+			    top: -70px;
+			}
+		}
+		@keyframes third{
+			to{
+				width: 30px;
+			    height: 20px;
+			    left: 606px;
+			    top: -70px;
+			}
+		}
+		@keyframes four{
+			to{
+				width: 30px;
+			    height: 20px;
+			    left: 265px;
+			    top: -70px;
+			}
+		}
+
+
+		
+		.select{
+			width: 60%;
+			height: 580px;
+			padding: 5%;
+			background: #222;
+			position: absolute;
+			top: -1000px;
+			left: 20%;
+			transition: 0.5s;
+			overflow-y: auto;
+			margin: auto;
+		}
+		.select.display{
+			top: 10px;
+		}
+		.select div{
+			width: 100%;
+			height: 200px;
+			display: flex;
+			padding: 5px;
+			border: 1px solid white;
+			position: relative;
+			margin: 5px auto;
+		}
+		.select div img{
+			width: 160px;
+			height: 100%;
+		}
+		
+		.select div p{
+			padding: 50px;
+			color: white;
+		}
+		.select div h6,
+		.select div button{
+			position: absolute;
+			left: 45%;
+			top: 50%;
+			color: white;
+		}
+		.select div button{
+			left: 60%;
+			top: 55%;
+		}
+		.select div span{
+			display: none;
+		}
+
+	</style>
+</head>
+<body>
+		
+
+<div class="container">
+	<div class="navbar">
+		<div class="logo">
+			<a href="tomalfarhan.html"><img src="image/pic1.png" width="100px"></a>
+			<nav>
+				<ul>
+					<li><a href="tomalfarhan.html">Home</a></li>
+					<li><a href="featureProducts.html">Product</a></li>
+					<li><a href="">About</a></li>
+					<li><a href="">Contact</a></li>
+					<li><a href="accountpage.html">Account</a></li>
+					<h1><i><img src="image/piccart.png" width="30px" height="30px"></i></h1>
+				</ul>
+			</nav>	
+		</div>
+    </div>	
+</div>
+
+
+<div class="row row2">
+	<h2> All Products</h2>
+	<select>
+		<option>Relevance</option>
+		<option>All Brands</option>
+		<option>Price: Low to High</option>
+		<option>Price: High to Low</option>
+	</select>
+</div>	
+
+<section>
+	<div class="row">
+		<div class="item">
+			<a href="productdetails.html"><img src="image/iphone1.png"width="200px"></a>
+			<p>Apple iPhone 12 Pro Max</p>
+			
+			<h6>৳161,999/=</h6>
+			<span></span>
+			<button>Add-cart</button>
+		</div>
+		<div class="item">
+			<a href="product1.html"><img src="image/samsung2.png"width="200px"></a>
+			<p>Samsung Galaxy S21 Ultra 5G</p>
+			
+			<h6>৳119,999/=</h6>
+			<span></span>
+			<button>Add-cart</button>
+		</div>
+		<div class="item">
+			<a href="product2.html"><img src="image/pixel1.png"width="200px"></a>
+			<p>Google Pixel 6 pro</p>
+			
+			<h6>BDT=coming/=</h6>
+			<span></span>
+			<button>Add-cart</button>
+		</div>
+		<div class="item">
+			<a href="product3.html"><img src="image/bike1.png"width="200px"></a>
+			<p>Honda CBR 150R 2021 </p>
+			
+			<h6>৳545,000/=</h6>
+			<span></span>
+			<button>Add-cart</button>
+		</div>
+	</div>
+	<div class="row">
+		<div class="item">
+			<a href="product4.html"><img src="image/bike2.png"width="200px"></a>
+			<p>XSR Motor Bike -155cc</p>
+			
+			<h6>৳525,000/=</h6>
+			<span></span>
+			<button>Add-cart</button>
+		</div>
+		<div class="item">
+			<a href="product5.html"><img src="image/bike3.png" width="
+				200px"></a>
+			<p>Yamaha R15 V3 Indian Version Dual ABS – CBU</p>
+			
+			<h6>৳430,000/=</h6>
+			<span></span>
+			<button>Add-cart</button>
+		</div>
+		<div class="item">
+			<a href="product6.html"><img src="image/shoes11.png"width="200px"></a>
+			<p>888-03-305/ASH BLACK</p>
+			
+			<h6>৳2,200/=</h6>
+			<span></span>
+			<button>Add-cart</button>
+		</div>
+		<div class="item">
+			<a href="product7.html"><img src="image/shoes1.png"width="200px"></a>
+			<p>CASTLE-16-BROWN</p>
+			
+			<h6>৳545,000/=</h6>
+			<span></span>
+			<button>Add-cart</button>
+		</div>
+	</div>
+	<div class="row">
+		<div class="item">
+			<a href="product8.html"><img src="image/new10.png"width="200px"></a>
+			<p>OnePlus Buds - Grey</p>
+			
+			<h6>৳7,290/=</h6>
+			<span></span>
+			<button>Add-cart</button>
+		</div>
+		<div class="item">
+			<a href="product1.html"><img src="image/new11.png" width="
+				200px"></a>
+			<p>Oppo F15</p>
+			
+			<h6>৳26,990/=</h6>
+			<span></span>
+			<button>Add-cart</button>
+		</div>
+		<div class="item">
+			<a href="product2.html"><img src="image/new12.png"width="200px"></a>
+			<p>Oppo Reno5 8/128 GB</p>
+			
+			<h6>৳35,990/=</h6>
+			<span></span>
+			<button>Add-cart</button>
+		</div>
+		<div class="item">
+			<a href="product3.html"><img src="image/new9.png"width="200px"></a>
+			<p>Haylou LS02 Smart Watch - Black</p>
+			
+			<h6>৳1,990/=</h6>
+			<span></span>
+			<button>Add-cart</button>
+		</div>
+	</div>
+</section>
+<div class="select">
+		
+	</div>
+<!----Footer-->
+
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footercol1">
+				<h3> Download Our Store App</h3>
+				<p> Download App For iOS & Android</p>
+				<div class="applogo">
+					<img src="image/applestore.png"width="120px">
+					<img src="image/playstore.png" width="120px">
+				</div>
+			</div>
+			
+			<div class="footercol2">
+				<h3> Menus </h3>
+				<ul>
+					<li>Privacy Policy</li>
+					<li>Return Policy</li>
+					<li>Terms & Condition</li>
+				</ul>
+			</div>
+			<div class="footercol3">
+				<img src="image/pic1.png"width="180px">
+				<p> Our Purpose Is To Make The Pleasure And Benefits Customer.</p>
+			</div>
+
+			<div class="footercol4">
+				<h3> Follow Us</h3>
+				<ul>
+					<li>Facebook</li>
+					<li>Twitter</li>
+					<li>Instagram</li>
+				</ul>
+			</div>
+			
+		</div>
+		<hr>
+		<p class="store">2021 TomalFarhanStore.com Limited. All rights reserved</p>
+		
+	</div>
+</div>
+
+</body>
+</html>
+
+
+<!-----------Java Script------>
+
+<script>
+	var noti = document.querySelector('h1');
+	var select = document.querySelector('.select');
+	var button = document.getElementsByTagName('button');
+	for(var but of button){
+		but.addEventListener('click', (e)=>{
+			var add = Number(noti.getAttribute('data-count') || 0);
+			noti.setAttribute('data-count', add +1);
+			noti.classList.add('zero')
+
+			// image --animation to cart ---//
+			var image = e.target.parentNode.querySelector('img');
+			var span = e.target.parentNode.querySelector('span');
+			var s_image = image.cloneNode(false);
+			span.appendChild(s_image);
+			span.classList.add("active");
+			setTimeout(()=>{
+				span.classList.remove("active");
+				span.removeChild(s_image);
+			}, 500); 
+			
+
+			// copy and paste //
+			var parent = e.target.parentNode;
+			var clone = parent.cloneNode(true);
+			select.appendChild(clone);
+			clone.lastElementChild.innerText = "Buy-now";
+			
+			if (clone) {
+				noti.onclick = ()=>{
+					select.classList.toggle('display');
+				}	
+			}
+		})
+	}
+</script>
